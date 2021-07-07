@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Merriweather", serif;
 }
 #main {
   background-color: rgb(238, 238, 238);
@@ -32,6 +33,16 @@
   background-color: rgb(30, 31, 38);
   font-size: 20px;
   color: white;
+}
+
+#header__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin-top: 15px;
+  font-size: 20px;
 }
 
 /* Header END */
@@ -74,14 +85,16 @@
   height: 662px;
   width: 1024px;
   max-width: 1024px;
+  box-shadow: 6px 6px 4px #333;
 }
 
 #img-div #img-caption {
   margin-top: 10px;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.5;
   text-align: center;
   color: #333;
+  padding: 15px;
 }
 
 /* Main photo END */
@@ -120,11 +133,12 @@
   align-items: center;
   align-content: center;
   text-align: center;
+  color: white;
 }
 
 .album__h2 {
   font-size: 35px;
-  color: #333;
+  color: white;
   padding: 20px;
   text-decoration: underline;
 }
@@ -133,6 +147,7 @@
   font-size: 20px;
   padding: 15px;
   text-align: justify;
+  line-height: 1.5;
 }
 
 .album__container {
@@ -142,6 +157,8 @@
   align-content: center;
   text-align: center;
   margin-bottom: 50px;
+  color: white;
+  line-height: 1.5;
 }
 
 .album__container__2 {
@@ -152,18 +169,28 @@
   align-content: center;
   text-align: center;
   margin-bottom: 50px;
+  color: white;
+  line-height: 1.5;
 }
 
 .album__cover {
   height: 450px;
   width: auto;
   box-shadow: 10px 10px 8px #333;
+  transition: height 0.5s, width 0.5s;
+}
+
+.album__cover:hover {
+  display: block;
+  height: 600px;
+  width: auto;
 }
 
 .album__h3 {
   font-size: 25px;
   text-align: center;
   margin-bottom: 5px;
+  line-height: 1.5;
 }
 
 .album__list {
@@ -173,6 +200,7 @@
   font-size: 20px;
   padding: 10px;
   border: 2px solid #333;
+  line-height: 1.5;
 }
 
 #external__link {
@@ -183,6 +211,10 @@
   height: 75px;
   width: auto;
   font-size: 25px;
+}
+
+#external__link p {
+  color: black;
 }
 
 /* Tribute Info Section END */
@@ -300,6 +332,11 @@
 
   .album__cover {
     display: flex;
+    height: auto;
+    width: 260px;
+  }
+
+  .album__cover:hover {
     height: auto;
     width: 243px;
   }
