@@ -19,9 +19,10 @@
 /* Header */
 
 .header__container {
-  position: sticky;
   top: 0;
   z-index: 999;
+  width: auto;
+  height: auto;
 }
 
 .header__container .header__nav {
@@ -41,8 +42,8 @@
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  margin-top: 15px;
-  font-size: 20px;
+  margin-top: 20px;
+  font-size: 22px;
 }
 
 /* Header END */
@@ -52,10 +53,11 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 30px;
+  margin-top: 15px;
   height: 100px;
   width: auto;
   font-size: 4rem;
+  font-style: italic;
 }
 
 #title__h2 {
@@ -64,6 +66,7 @@
   height: 50px;
   width: auto;
   font-size: 1.6rem;
+  font-style: italic;
 }
 
 /* Main photo */
@@ -75,7 +78,7 @@
   align-content: center;
   text-align: center;
   padding: 15px;
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 #img-div #image {
@@ -95,6 +98,7 @@
   text-align: center;
   color: #333;
   padding: 15px;
+  font-style: italic;
 }
 
 /* Main photo END */
@@ -102,7 +106,6 @@
 /* Tribute Info Section */
 
 .album__background {
-  display: block;
   background-image: linear-gradient(#dbd5a4, #649173);
   padding: 10px 50px 10px 50px;
   border-top: 2px solid black;
@@ -181,7 +184,7 @@
 }
 
 .album__cover:hover {
-  display: block;
+  display: flex;
   height: 600px;
   width: auto;
 }
@@ -199,9 +202,36 @@
   text-align: center;
   font-size: 20px;
   padding: 10px;
-  border: 2px solid #333;
+  border: 2px solid whitesmoke;
   line-height: 1.5;
 }
+
+/* List general attributes */
+
+ol {
+  margin: 0 0 1.5em;
+  padding: 0;
+  counter-reset: item;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+/* List general attributes END */
 
 #external__link {
   display: flex;
@@ -221,6 +251,14 @@
 
 /* Footer */
 
+#advice {
+  font-size: 15px;
+  height: 60px;
+  width: auto;
+  font-style: italic;
+  text-align: center;
+}
+
 .footer__container {
   display: flex;
   justify-content: center;
@@ -239,6 +277,10 @@
   margin-left: 25px;
 }
 
+/* Footer END */
+
+/* MEDIA FOR CELLPHONE */
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   #main {
     padding: 0 0 0 5px;
@@ -246,7 +288,11 @@
   }
 
   .header__container .header__nav {
-    font-size: 15px;
+    font-size: 13px;
+  }
+
+  #header__list {
+    display: none;
   }
 
   #title {
@@ -358,37 +404,18 @@
     font-size: 20px;
   }
 
+  #advice {
+    font-size: 15px;
+    height: 100px;
+    width: auto;
+    font-style: italic;
+    text-align: center;
+  }
+
   .footer__container {
     height: 65px;
     width: 294px;
   }
 }
 
-/* Footer END */
-
-/* List general attributes */
-
-ol {
-  margin: 0 0 1.5em;
-  padding: 0;
-  counter-reset: item;
-}
-
-ol > li {
-  margin: 0;
-  padding: 0 0 0 2em;
-  text-indent: -2em;
-  list-style-type: none;
-  counter-increment: item;
-}
-
-ol > li:before {
-  display: inline-block;
-  width: 1em;
-  padding-right: 0.5em;
-  font-weight: bold;
-  text-align: right;
-  content: counter(item) ".";
-}
-
-/* List general attributes END */
+/* MEDIA FOR CELLPHONE END */
