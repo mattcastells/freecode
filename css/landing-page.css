@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 }
+main {
+  background-color: rgb(238, 238, 238);
+}
+/* Header */
 
 .header__nav {
   display: flex;
@@ -17,6 +21,31 @@
   font-size: 20px;
   color: white;
 }
+
+/* Header END */
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 15px;
+  margin-top: 30px;
+  height: 100px;
+  width: auto;
+  font-size: 4rem;
+}
+
+#title__h2 {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: auto;
+  padding: 15px;
+  font-size: 1.6rem;
+}
+
+/* Footer */
 
 .footer__container {
   display: flex;
@@ -35,3 +64,5 @@
   width: auto;
   margin-left: 25px;
 }
+
+/* Footer END */
