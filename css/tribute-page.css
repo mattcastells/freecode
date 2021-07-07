@@ -23,10 +23,12 @@
   z-index: 999;
   width: auto;
   height: auto;
+  overflow: hidden;
 }
 
 .header__container .header__nav {
   display: flex;
+  overflow: hidden;
   justify-content: space-around;
   align-items: center;
   align-content: center;
@@ -38,6 +40,7 @@
 
 #header__list {
   display: flex;
+  overflow: hidden;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -67,6 +70,22 @@
   width: auto;
   font-size: 1.6rem;
   font-style: italic;
+  animation: slide-left 5s;
+  overflow: hidden;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 45%;
+    width: 65%;
+    opacity: 50%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 100%;
+  }
 }
 
 /* Main photo */
@@ -306,10 +325,29 @@ ol > li:before {
     text-align: center;
   }
 
+  @keyframes slide-left {
+    from {
+      margin-left: 0%;
+      width: 100%;
+      opacity: 100%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+      opacity: 100%;
+    }
+  }
+
+  #img-div {
+    justify-content: center;
+    text-align: center;
+  }
+
   #img-div #image {
-    display: flex;
     height: auto;
     width: 243px;
+    margin-right: 0px;
   }
 
   #img-div #img-caption {
