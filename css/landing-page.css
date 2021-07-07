@@ -20,7 +20,7 @@
 
 .footer__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   align-content: center;
   height: 65px;
@@ -29,9 +29,9 @@
   color: white;
 }
 
-.footer__container .github__link {
+.footer__container .github__icon .github__link {
   display: flex;
   height: 40px;
   width: auto;
-  margin-left: 30px;
+  margin-left: 25px;
 }
