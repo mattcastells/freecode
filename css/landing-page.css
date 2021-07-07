@@ -63,7 +63,7 @@ main {
   background-color: white;
 }
 
-#img-div #main__photo {
+#img-div #image {
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -83,43 +83,95 @@ main {
 
 /* Tribute Info Section */
 
+.album__background {
+  background-image: linear-gradient(#dbd5a4, #649173);
+  padding: 10px 50px 10px 50px;
+  border-top: 2px solid black;
+}
+
+.album__background__2 {
+  background-image: linear-gradient(#ffb88c, #de6262);
+  padding: 10px 50px 10px 50px;
+  border-top: 2px solid black;
+}
+
+.album__background__3 {
+  background-image: linear-gradient(#36d1dc, #5b86e5);
+  padding: 10px 50px 10px 50px;
+  border-top: 2px solid black;
+}
+
+.album__background__4 {
+  background-image: linear-gradient(#bdc3c7, #2c3e50);
+  padding: 10px 50px 10px 50px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
 #tribute-info {
   display: block;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
-  margin: 15px 405px;
+  margin: 15px 250px;
 }
 
 .album__h2 {
   font-size: 35px;
   color: #333;
   padding: 20px;
+  text-decoration: underline;
 }
 
-.album__info {
+.album__desc {
   font-size: 20px;
   padding: 15px;
   text-align: justify;
 }
 
+.album__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.album__container__2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .album__cover {
   height: 450px;
   width: auto;
+  box-shadow: 10px 10px 8px #333;
 }
 
 .album__h3 {
   font-size: 25px;
-  padding: 10px;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .album__list {
   margin-top: 15px;
+  list-style-position: inside;
   text-align: center;
   font-size: 20px;
+  padding: 10px;
+  border: 2px solid #333;
 }
+
+.external__link
+
 /* Tribute Info Section END */
 
 /* Footer */
@@ -143,3 +195,30 @@ main {
 }
 
 /* Footer END */
+
+/* List general attributes */
+
+ol {
+  margin: 0 0 1.5em;
+  padding: 0;
+  counter-reset: item;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+/* List general attributes END */
