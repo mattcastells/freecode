@@ -2,21 +2,30 @@
   /* Reset universal */
   margin: 0;
   padding: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
 main {
   background-color: rgb(238, 238, 238);
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #eee;
 }
 /* Header */
 
-.header__nav {
+.header__container {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header__container .header__nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   align-content: center;
   height: 65px;
-  position: sticky;
-  top: 0;
-  z-index: 999;
   background-color: rgb(30, 31, 38);
   font-size: 20px;
   color: white;
@@ -29,7 +38,6 @@ main {
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 15px;
   margin-top: 30px;
   height: 100px;
   width: auto;
@@ -41,9 +49,51 @@ main {
   justify-content: center;
   height: 50px;
   width: auto;
-  padding: 15px;
   font-size: 1.6rem;
 }
+
+/* Main photo */
+
+#img-div {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 15px;
+  background-color: white;
+}
+
+#img-div #main__photo {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 662px;
+  width: 1024px;
+}
+
+#img-div #img-caption {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+}
+
+/* Main photo END */
+
+/* Tribute Info Section */
+
+#tribute-info {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 405px;
+}
+
+/* Tribute Info Section END */
 
 /* Footer */
 
