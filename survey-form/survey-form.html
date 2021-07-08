@@ -30,11 +30,33 @@
 
         <form id="survey-form">
 
-            <div id="formulario__nombre">
-                <label for="name">Nombre:</label>
-                <input class="input__bar" id="name" type="text" name="name">
+            <div id="form__group">
+                <label class="form__label" for="name">Name</label>
+                <input id="name" class="form__control" type="text" name="name" placeholder="Enter your name" required>
             </div>
 
+            <div id="form__group">
+                <label class="form__label" for="email">Email</label>
+                <input id="email" class="form__control" type="email" name="name" placeholder="Enter your Email"
+                    required>
+            </div>
+
+            <div id="form__group">
+                <label class="form__label" for="age">Age <span class="clue">(optional)</span></label>
+                <input id="age" class="form__control" type="age" name="age" placeholder="Age">
+            </div>
+
+            <div id="form__group">
+                <p class="p__desc">Which option best describes your current role?</p>
+                <select id="dropdown" class="form__control" name="role" class="form-control" required>
+                    <option disabled selected value> Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not so say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
 
         </form>
 
