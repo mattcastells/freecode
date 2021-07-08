@@ -80,7 +80,7 @@ body {
   color: var(--color-white);
 }
 
-#form__group {
+.form__group {
   margin: 0 auto 1.25rem auto;
   padding: 0.25rem;
   display: block;
@@ -106,6 +106,30 @@ body {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-radio {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
 }
 
 .clue {

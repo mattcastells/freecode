@@ -30,31 +30,51 @@
 
         <form id="survey-form">
 
-            <div id="form__group">
+            <div class="form__group">
                 <label class="form__label" for="name">Name</label>
                 <input id="name" class="form__control" type="text" name="name" placeholder="Enter your name" required>
             </div>
 
-            <div id="form__group">
+            <div class="form__group">
                 <label class="form__label" for="email">Email</label>
                 <input id="email" class="form__control" type="email" name="name" placeholder="Enter your Email"
                     required>
             </div>
 
-            <div id="form__group">
+            <div class="form__group">
                 <label class="form__label" for="age">Age <span class="clue">(optional)</span></label>
-                <input id="age" class="form__control" type="age" name="age" placeholder="Age">
+                <input id="age" class="form__control" type="number" min="10" max="99" name="age" placeholder="Age">
             </div>
 
-            <div id="form__group">
+            <div class="form__group">
                 <p class="p__desc">Which option best describes your current role?</p>
-                <select id="dropdown" class="form__control" name="role" class="form-control" required>
+                <select id="dropdown" class="form__control" name="role" required>
                     <option disabled selected value> Select current role</option>
                     <option value="student">Student</option>
                     <option value="job">Full Time Job</option>
                     <option value="learner">Full Time Learner</option>
                     <option value="preferNo">Prefer not so say</option>
                     <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form__group">
+                <p class="p__desc">Would you recommend freCodeCamp to a friend?</p>
+                <label><input class="input-radio" name="user-recommend" value="definitely" type="radio"
+                        checked>Definitely</label>
+                <label><input class="input-radio" name="user-recommend" value="maybe" type="radio">Maybe</label>
+                <label><input class="input-radio" name="user-recommend" value="not-sure" type="radio">Not sure</label>
+
+            </div>
+
+            <div class="form__group">
+                <p class="p__desc">What is your favorite feature of freeCodeCamp?</p>
+                <select id="most-like" class="form__control" name="mostLike" required>
+                    <option disabled selected value> Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
                 </select>
             </div>
 
