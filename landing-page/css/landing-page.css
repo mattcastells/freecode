@@ -4,3 +4,65 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Header */
+
+.header__container {
+  top: 0;
+  z-index: 999;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+}
+
+.header__container .header__nav {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 65px;
+  background-color: rgb(30, 31, 38);
+  font-size: 20px;
+  color: white;
+}
+
+/* Header END */
+
+/* Footer */
+
+#advice p {
+  display: block;
+  margin-top: 20px;
+  font-size: 1rem;
+  height: 60px;
+  text-align: center;
+  color: black;
+  font-weight: 600px;
+  max-width: 720px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 65px;
+  background-color: rgb(30, 31, 38);
+  font-size: 20px;
+  color: white;
+}
+
+.footer__container .github__icon .github__link {
+  display: flex;
+  height: 40px;
+  width: auto;
+  margin-left: 25px;
+}
+
+/* Footer END */
