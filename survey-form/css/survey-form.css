@@ -195,7 +195,7 @@ label {
 
 /* Footer */
 
-#advice {
+#advice p {
   display: block;
   margin-top: 20px;
   font-size: 1rem;
@@ -207,6 +207,7 @@ label {
   margin: auto;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .footer__container {
