@@ -594,9 +594,19 @@ ol > li:before {
 
   .footer__container {
     height: 65px;
-    width: 768px;
+    width: 350px;
     font-size: 25px;
+  }
+
+  .footer__content {
+    width: 350px;
   }
 }
 
 /* MEDIA FOR TABLET AND PORTABLE DEVICES END*/
+
+@media screen and (max-width: 1024px) {
+  main {
+    margin: auto;
+  }
+}
