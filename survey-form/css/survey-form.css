@@ -345,3 +345,9 @@ label {
 }
 
 /* Media Queary for Tablets END */
+
+@media screen and (max-width: 1024px) {
+  #survey-form {
+    margin: auto;
+  }
+}
