@@ -1,0 +1,24 @@
+/* Header */
+
+.header__container {
+  top: 0;
+  z-index: 999;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+}
+
+.header__container .header__nav p {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 65px;
+  font-size: 20px;
+  background-color: rgb(30, 31, 38);
+  color: white;
+}
+
+/* Header END */

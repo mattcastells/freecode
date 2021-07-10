@@ -5,10 +5,26 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: lato-p;
+  src: url("../assets/Lato/Lato-Regular.ttf");
+}
+
+#main {
+  background-color: #eeeeee;
+}
+
 p {
   font-size: 16px;
+  font-family: lato-p;
+  color: black;
 }
 
 h2 {
   font-size: 24px;
+  font-family: lato-p;
+}
+
+a {
+  font-family: lato-p;
 }
