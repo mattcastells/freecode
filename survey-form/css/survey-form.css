@@ -350,4 +350,16 @@ label {
   #survey-form {
     margin: auto;
   }
+
+  .footer__container {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #advice p {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
