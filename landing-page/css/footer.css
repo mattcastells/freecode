@@ -24,6 +24,7 @@
 .footer__container p {
   font-size: 20px;
   color: white;
+  background-color: rgb(30, 31, 38);
 }
 
 .footer__container .github__icon .github__link {
@@ -31,6 +32,11 @@
   height: 40px;
   width: auto;
   margin-left: 25px;
+  background-color: rgb(30, 31, 38);
+}
+
+.github__icon {
+  background-color: rgb(30, 31, 38);
 }
 
 /* Footer END */

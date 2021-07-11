@@ -1,0 +1,57 @@
+#top__section {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+  width: 35vw;
+  height: 75px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+#logo {
+  width: 60vw;
+  margin: auto auto auto 20px;
+}
+
+#header-img {
+  width: 300px;
+  height: auto;
+}
+
+.banner__container {
+  z-index: 999;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+}
+
+.banner__container .banner__nav p {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 65px;
+  font-size: 20px;
+  background-color: rgb(30, 31, 38);
+  color: white;
+}
