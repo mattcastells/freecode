@@ -1,0 +1,36 @@
+#features__container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.features__box {
+  display: flex;
+}
+
+.icon__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  width: 20vw;
+}
+
+.features__logo {
+  color: darkorange;
+}
+
+.features__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80%;
+  padding: 5px;
+}
+
+#features__video {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
