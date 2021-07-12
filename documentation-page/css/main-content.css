@@ -1,0 +1,21 @@
+main {
+  display: block;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
