@@ -20,3 +20,29 @@ article {
   margin: 15px;
   font-size: 0.96em;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #main-doc {
+    margin-left: -10px;
+    margin-top: 340px;
+    width: auto;
+  }
+
+  .main-section {
+    max-width: 270px;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  #main-doc {
+    margin: 0px;
+    margin-top: 340px;
+    width: auto;
+  }
+
+  .main-section {
+    width: auto;
+    margin: 0px;
+  }
+}
