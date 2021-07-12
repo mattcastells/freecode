@@ -1,15 +1,14 @@
 .banner__container {
   margin: auto;
   position: fixed;
-  z-index: 11;
+  top: 0;
+  z-index: 999;
   width: 100%;
   min-height: 65px;
-  overflow: hidden;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
 
   background-color: rgb(30, 31, 38);
   box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
