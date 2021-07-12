@@ -1,6 +1,5 @@
 #top__section {
   position: fixed;
-  overflow: hidden;
   top: 0;
 }
 
@@ -37,11 +36,8 @@
 }
 
 .banner__container {
-  z-index: 999;
   width: auto;
   height: auto;
-  overflow: hidden;
-  padding: 0px 0px 0px 0px;
 }
 
 .banner__container .banner__nav p {
@@ -54,4 +50,33 @@
   font-size: 20px;
   background-color: rgb(30, 31, 38);
   color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .banner__container .banner__nav p {
+    font-size: 15px;
+  }
+
+  #top__section {
+    position: relative;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo {
+    justify-content: flex-start;
+    width: auto;
+    margin: 0px;
+    margin-top: 10px;
+  }
+
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
 }
