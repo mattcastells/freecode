@@ -52,7 +52,7 @@
   background-color: #f1c40f;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   #pricing {
     flex-direction: column;
   }
