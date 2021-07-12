@@ -4,9 +4,10 @@ main {
 
 #main-doc {
   position: absolute;
-  margin-left: 310px;
   padding: 20px;
+  margin-left: 310px;
   margin-bottom: 110px;
+  margin-top: 65px;
 }
 
 #main-doc header {

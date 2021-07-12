@@ -1,0 +1,21 @@
+.banner__container {
+  margin: auto;
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  min-height: 65px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  background-color: rgb(30, 31, 38);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+}
+
+#banner__text {
+  font-size: 20px;
+  color: white;
+}
