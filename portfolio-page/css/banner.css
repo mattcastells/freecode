@@ -1,0 +1,27 @@
+.banner__container {
+  margin: auto;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  min-height: 65px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(30, 31, 38);
+  box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+}
+
+#banner__text {
+  font-size: 20px;
+  color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #banner__text {
+    font-size: 12px;
+    color: white;
+  }
+}
