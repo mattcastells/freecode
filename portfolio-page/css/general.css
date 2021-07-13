@@ -16,3 +16,7 @@
   font-family: Poppins-italic;
   src: url("../assets/Poppins/Poppins-ExtraLightItalic.ttf");
 }
+
+a {
+  text-decoration: none;
+}
