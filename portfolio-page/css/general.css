@@ -4,4 +4,15 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 1.5;
+  font-family: Poppins, sans-serif;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../assets/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-italic;
+  src: url("../assets/Poppins/Poppins-ExtraLightItalic.ttf");
 }
